@@ -7,14 +7,25 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display"> -->
 
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
     .attribution {
       font-size: 11px;
       text-align: center;
+    }
+
+    .asdf {
+      color: hsl(225, 100%, 94%);
+      color: hsl(245, 75%, 52%);
+      color: hsl(225, 100%, 98%);
+      color: hsl(224, 23%, 55%);
+      color: hsl(223, 47%, 23%);
     }
 
     .attribution a {
@@ -34,7 +45,7 @@
     }
 
     body {
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-family: 'Red Hat Display', sans-serif;
       line-height: 1rem;
       text-decoration: none;
       background-image: url('images/pattern-background-desktop.svg');
@@ -51,13 +62,13 @@
 
     .card {
       color: rgba(85, 86, 112, 0.836);
-      margin: 0 50px;
+      margin: 0 20px;
       text-align: center;
       max-width: 350px;
       min-width: 300px;
       background-color: #fff;
       border-radius: 1rem;
-      padding: 12rem 1.5rem 2rem 1.5rem;
+      padding: 12rem 1.8rem 2rem 1.8rem;
       background-image: url('images/illustration-hero.svg');
       background-size: 350px auto;
       background-position: top;
@@ -69,15 +80,15 @@
 
     .card-btn-payment {
       margin: 1rem 0;
-      background-color: rgb(89, 0, 255);
+      background-color: hsl(245, 75%, 52%);
       color: #fff;
       border-radius: .5rem;
       padding: .8rem 0;
-      box-shadow: 0 5px 10px rgba(0, 0, 255, 0.199);
+      box-shadow: 0 10px 10px hsla(245, 75%, 52%, 0.212);
     }
 
-    .card-btn-payment:hover{
-      background-color: rgb(159, 108, 255);
+    .card-btn-payment:hover {
+      background-color: hsl(245, 63%, 64%);
     }
 
     .card-content {
@@ -100,12 +111,17 @@
 
     .plan-details {
       line-height: .5rem;
-      margin-left: 10px;
+      margin-left: 20px;
       text-align: start;
     }
 
-    .bold{
-      font-weight: bold;
+
+    .plan-details>p {
+      font-size: .9rem;
+    }
+
+    .bold {
+      font-weight: 900;
       color: rgb(0, 2, 36);
     }
 
@@ -115,28 +131,30 @@
     }
 
     .plan-btn {
+      font-size: .9rem;
       text-decoration: underline;
       font-weight: bold;
-      color: rgb(89, 0, 255);
+      color: hsl(245, 75%, 52%);
     }
 
-    .plan-btn:hover{
-      color: rgb(159, 108, 255);
+    .plan-btn:hover {
+      color: hsl(245, 63%, 64%);
       text-decoration: none;
     }
 
-    .card > a  {
+
+    .card>a {
       font-weight: bold;
+      font-size: .9rem;
     }
 
-    .card-btn-cancel{
+    .card-btn-cancel {
       color: rgba(85, 86, 112, 0.836);
     }
 
-    .card-btn-cancel:hover{
+    .card-btn-cancel:hover {
       color: black;
     }
-    
   </style>
 </head>
 
@@ -156,10 +174,10 @@
           <p class="plan-price">$59.99/year</p>
         </div>
       </div>
-      <a href="" class="plan-btn">Change</a>
+      <a href="#" class="plan-btn">Change</a>
     </div>
-    <a href="" class="card-btn-payment">Proceed to Payment</a>
-    <a href="" class="card-btn-cancel">Cancel Order</a>
+    <a href="#" class="card-btn-payment">Proceed to Payment</a>
+    <a href="#" class="card-btn-cancel">Cancel Order</a>
   </div>
 
   <div class="attribution">
