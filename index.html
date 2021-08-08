@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    body {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      line-height: 1rem;
+      text-decoration: none;
+      background-image: url('images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: hsl(227, 100%, 95%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      color: rgba(85, 86, 112, 0.836);
+      margin: 0 50px;
+      text-align: center;
+      max-width: 350px;
+      min-width: 300px;
+      background-color: #fff;
+      border-radius: 1rem;
+      padding: 12rem 1.5rem 2rem 1.5rem;
+      background-image: url('images/illustration-hero.svg');
+      background-size: 350px auto;
+      background-position: top;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-btn-payment {
+      margin: 1rem 0;
+      background-color: rgb(89, 0, 255);
+      color: #fff;
+      border-radius: .5rem;
+      padding: .8rem 0;
+      box-shadow: 0 5px 10px rgba(0, 0, 255, 0.199);
+    }
+
+    .card-btn-payment:hover{
+      background-color: rgb(159, 108, 255);
+    }
+
+    .card-content {
+      line-height: 1.5rem;
+    }
+
+    .card-plan {
+      background-color: hsla(226, 100%, 95%, 0.322);
+      padding: .5rem 1rem;
+      border-radius: .5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .plan-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .plan-details {
+      line-height: .5rem;
+      margin-left: 10px;
+      text-align: start;
+    }
+
+    .bold{
+      font-weight: bold;
+      color: rgb(0, 2, 36);
+    }
+
+    .plan-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .plan-btn {
+      text-decoration: underline;
+      font-weight: bold;
+      color: rgb(89, 0, 255);
+    }
+
+    .plan-btn:hover{
+      color: rgb(159, 108, 255);
+      text-decoration: none;
+    }
+
+    .card > a  {
+      font-weight: bold;
+    }
+
+    .card-btn-cancel{
+      color: rgba(85, 86, 112, 0.836);
+    }
+
+    .card-btn-cancel:hover{
+      color: black;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1 class="card-title bold">Order Summary</h1>
+    <p class="card-content">
+      You can now listen to millions of songs, audiobooks, and podcasts on any
+      device anywhere you like!
+    </p>
+    <div class="card-plan">
+      <div class="plan-container">
+        <img src="images/icon-music.svg" alt="music icon" class="plan-icon">
+        <div class="plan-details">
+          <p class="plan-title bold">Annual Plan</p>
+          <p class="plan-price">$59.99/year</p>
+        </div>
+      </div>
+      <a href="" class="plan-btn">Change</a>
+    </div>
+    <a href="" class="card-btn-payment">Proceed to Payment</a>
+    <a href="" class="card-btn-cancel">Cancel Order</a>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="http://github.com/exequielarroyo">Exequiel Arroyo</a>.
+  </div>
+</body>
+
+</html>
